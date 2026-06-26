@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Feedback Survey</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: auto;
+      background: white;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,.1);
+    }
+
+    h1, p {
+      text-align: center;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input,
+    select,
+    textarea,
+    button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      box-sizing: border-box;
+    }
+
+    .inline {
+      width: auto;
+      margin-right: 8px;
+    }
+
+    button {
+      margin-top: 20px;
+      background: #0066cc;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background: #004c99;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1 id="title">Student Feedback Survey</h1>
+
+<p id="description">
+Please complete this short survey to help us improve our learning experience.
+</p>
+
+<form id="survey-form">
+
+<label id="name-label" for="name">Full Name</label>
+<input
+type="text"
+id="name"
+placeholder="Enter your full name"
+required>
+
+<label id="email-label" for="email">Email Address</label>
+<input
+type="email"
+id="email"
+placeholder="Enter your email"
+required>
+
+<label id="number-label" for="number">Age</label>
+<input
+type="number"
+id="number"
+placeholder="Enter your age"
+min="10"
+max="100">
+
+<label for="dropdown">Current Level</label>
+<select id="dropdown">
+  <option value="">Select one</option>
+  <option value="beginner">Beginner</option>
+  <option value="intermediate">Intermediate</option>
+  <option value="advanced">Advanced</option>
+</select>
+
+<label>How did you hear about us?</label>
+
+<input
+class="inline"
+type="radio"
+name="source"
+value="friend">
+Friend
+
+<br>
+
+<input
+class="inline"
+type="radio"
+name="source"
+value="internet">
+Internet
+
+<label>Which features do you like?</label>
+
+<input
+class="inline"
+type="checkbox"
+value="lessons">
+Interactive Lessons
+
+<br>
+
+<input
+class="inline"
+type="checkbox"
+value="projects">
+Hands-on Projects
+
+<br>
+
+<input
+class="inline"
+type="checkbox"
+value="community">
+Community Support
+
+<label for="comments">Additional Comments</label>
+
+<textarea
+id="comments"
+rows="5"
+placeholder="Write your comments here..."></textarea>
+
+<button id="submit" type="submit">
+Submit
+</button>
+
+</form>
+
+</div>
+
+</body>
+</html>
